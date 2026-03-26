@@ -5,7 +5,9 @@ int BaseRewardRule::compute(int baseScore, int round) {
 }
 
 int BonusRewardRule::compute(int baseScore, int round) {
-    if (round % 2 == 0)
-        return baseScore * 2; // ronde genap: double reward
-    return baseScore + 2;     // ronde ganjil: tambah 2
+    if (round == 2)
+        return baseScore + 2; // ronde 2: tambah 2
+    if (round == 3)
+        return baseScore * 2; // ronde 3: kali 2
+    return baseScore;
 }

@@ -5,7 +5,7 @@
 #include "RewardRules.h"
 
 int main() {
-    srand(42); // seed random supaya hasilnya konsisten
+    srand(58); // seed random supaya hasilnya konsisten
 
     // Modification 1: pakai RandomInputGenerator (bukan FixedInputGenerator)
     // Modification 2: pakai BonusRewardRule (bukan BaseRewardRule)
